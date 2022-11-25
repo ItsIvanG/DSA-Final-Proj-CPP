@@ -1,7 +1,9 @@
 #include <iostream>
+#include <stdlib.h>
 using namespace std;
 
 void viewMembers() {
+    system("CLS");
     string namesMembers[] = { "Gonzales, Ivan S."     ,
                 "Manalo, Mary Grace C."               ,
                 "Buendia, Daniela Mhaey F."           ,
@@ -23,12 +25,19 @@ void viewMembers() {
 
     int answer;
     cin >> answer;
-    if (answer > 0) {
+    if (answer > 0 && answer < sizeof(namesMembers) / sizeof(namesMembers[0])) {
         cout << namesMembers[answer - 1]<<endl;
+        system("pause");
+        viewMembers();
+    }
+    else  {
+        cout << "Invalid input.\n";
+        system("pause");
         viewMembers();
     }
 }
 void mainMenu() {
+    system("CLS");
 	cout<<"[1] Arrays & Pointers"			<< endl;
 	cout<<"[2] Linked List"					<< endl;
 	cout<<"[3] Stack Data Structure"		<< endl;
