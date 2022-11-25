@@ -1,5 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
+#include "Arrays.h"
+#include "LinkedList.h"
 using namespace std;
 
 void viewMembers() {
@@ -52,12 +54,17 @@ void mainMenu() {
     switch (answer) {
 
     case 0:
+        exit(0);
         //exit
         break;
     case 1:
+        Arrays();
+        mainMenu();
         //arrays
         break;
     case 2:
+        linkedListMain();
+        mainMenu();
         //linkedlist
         break;
     case 3:
