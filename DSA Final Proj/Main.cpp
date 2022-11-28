@@ -18,9 +18,7 @@ void mainMenu() {
 	cout<<"[3] Stack Data Structure"		<< endl;
 	cout<<"[4] Queue Data Structure"		<< endl;
 	cout<<"[5] Search & Sorting Algorithm"	<< endl;
-	cout<<"[6] Hash Table"					<< endl;
-	cout<<"[7] Tree Data Structure"			<< endl;
-	cout<<"[8] Group Members"				<< endl;
+	cout<<"[6] Group Members"				<< endl;
 	cout<<"[0] Exit"						<< endl;
     int answer;
     cin >> answer;
@@ -43,11 +41,7 @@ void mainMenu() {
         break;
     case 5:        //search
         break;      
-    case 6:        //hash
-        break;
-    case 7:        //tree
-        break;
-    case 8:        //group members
+    case 6:        //group members
         viewMembers();
         mainMenu();
         break;
