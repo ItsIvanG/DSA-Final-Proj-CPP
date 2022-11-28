@@ -4,40 +4,13 @@
 #include "LinkedList.h"
 using namespace std;
 
-void viewMembers() {
-    system("CLS");
-    string namesMembers[] = { "Gonzales, Ivan S."     ,
-                "Manalo, Mary Grace C."               ,
-                "Buendia, Daniela Mhaey F."           ,
-                "Garcia, Exequiel G."                 ,
-                "Enriquez, John Ren P."               ,
-                "Tuazon, Julian Madison C."           ,
-                "Rodriguez, Patrisha Marie"           ,
-                "Sengco, Raeneil P." };               
+void mainMenu();
+void viewMembers();
 
-       cout<<"[1] Group Leader\n"          ;
-       cout<<"[2] Member 1\n" ;
-       cout<<"[3] Member 2\n" ;
-       cout<<"[4] Member 3\n" ;
-       cout<<"[5] Member 4\n" ;
-       cout<<"[6] Member 5\n" ;
-       cout<<"[7] Member 6\n" ;
-       cout<<"[8] Member 7\n" ;
-       cout<<"[0] Back to Main Menu\n"     ;
-
-    int answer;
-    cin >> answer;
-    if (answer > 0 && answer < sizeof(namesMembers) / sizeof(namesMembers[0])) {
-        cout << namesMembers[answer - 1]<<endl;
-        system("pause");
-        viewMembers();
-    }
-    else  {
-        cout << "Invalid input.\n";
-        system("pause");
-        viewMembers();
-    }
+int main() {
+    mainMenu();
 }
+
 void mainMenu() {
     system("CLS");
 	cout<<"[1] Arrays & Pointers"			<< endl;
@@ -53,37 +26,28 @@ void mainMenu() {
     cin >> answer;
     switch (answer) {
 
-    case 0:
+    case 0:        //exit
         exit(0);
-        //exit
         break;
-    case 1:
+    case 1:        //arrays
         Arrays();
         mainMenu();
-        //arrays
         break;
-    case 2:
+    case 2:        //linkedlist
         linkedListMain();
         mainMenu();
-        //linkedlist
         break;
-    case 3:
-        //stack
+    case 3:        //stack
         break;
-    case 4:
-        //queue
+    case 4:        //queue
         break;
-    case  5:
-        //search
+    case 5:        //search
+        break;      
+    case 6:        //hash
         break;
-    case 6:
-        //hash
+    case 7:        //tree
         break;
-    case 7:
-        //tree
-        break;
-    case 8:
-        //group members
+    case 8:        //group members
         viewMembers();
         mainMenu();
         break;
@@ -95,6 +59,39 @@ void mainMenu() {
 }
 
 
-int main() {
-	mainMenu();
+void viewMembers() {
+    system("CLS");
+    string namesMembers[] = { "Gonzales, Ivan S."     ,
+                "Manalo, Mary Grace C."               ,
+                "Buendia, Daniela Mhaey F."           ,
+                "Garcia, Exequiel G."                 ,
+                "Enriquez, John Ren P."               ,
+                "Tuazon, Julian Madison C."           ,
+                "Rodriguez, Patrisha Marie"           ,
+                "Sengco, Raeneil P." };
+
+    cout << "[1] Group Leader\n";
+    cout << "[2] Member 1\n";
+    cout << "[3] Member 2\n";
+    cout << "[4] Member 3\n";
+    cout << "[5] Member 4\n";
+    cout << "[6] Member 5\n";
+    cout << "[7] Member 6\n";
+    cout << "[8] Member 7\n";
+    cout << "[0] Back to Main Menu\n";
+
+    int answer;
+    cin >> answer;
+    if (answer > 0 && answer < sizeof(namesMembers) / sizeof(namesMembers[0])) {
+        cout << namesMembers[answer - 1] << endl;
+        system("pause");
+        viewMembers();
+    }
+    
+    else if (answer!=0) {
+        cout << "Invalid input.\n";
+        system("pause");
+        viewMembers();
+    }
 }
+

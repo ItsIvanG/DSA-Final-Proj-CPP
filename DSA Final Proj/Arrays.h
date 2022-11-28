@@ -4,5 +4,6 @@ using namespace std;
 void Arrays() {
 	cout << "arrays here\n";
 	Arrays1D();
+	system("pause");
 }
 
