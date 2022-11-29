@@ -11,6 +11,9 @@ void linkedListSTL() {
     for (int i = 0; i < n; i++)
     {
         string a;
+
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
         cout << ("Enter Patient ID No.: ");
         getline(cin, a);
         ll.push_front(a);
