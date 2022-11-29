@@ -25,13 +25,22 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Arrays.h">
+    <ClInclude Include="ArraysMenu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Arrays1D.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="LinkedList.h">
+    <ClInclude Include="LinkedListMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Stackmenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="queueMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="searchMenu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

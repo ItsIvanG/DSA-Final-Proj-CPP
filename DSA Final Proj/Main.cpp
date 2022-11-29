@@ -1,7 +1,10 @@
 #include <iostream>
 #include <stdlib.h>
-#include "Arrays.h"
-#include "LinkedList.h"
+#include "ArraysMenu.h"
+#include "LinkedListMenu.h"
+#include "stackmenu.h"
+#include "queuemenu.h"
+#include "searchmenu.h"
 using namespace std;
 
 void mainMenu();
@@ -12,7 +15,7 @@ int main() {
 }
 
 void mainMenu() {
-    system("CLS");
+    //system("CLS");
 	cout<<"[1] Arrays & Pointers"			<< endl;
 	cout<<"[2] Linked List"					<< endl;
 	cout<<"[3] Stack Data Structure"		<< endl;
@@ -28,18 +31,24 @@ void mainMenu() {
         exit(0);
         break;
     case 1:        //arrays
-        Arrays();
+        ArraysMenu();
         mainMenu();
         break;
     case 2:        //linkedlist
-        linkedListMain();
+        linkedListMenu();
         mainMenu();
         break;
     case 3:        //stack
+        stackMenu();
+        mainMenu();
         break;
     case 4:        //queue
+        queueMenu();
+        mainMenu();
         break;
     case 5:        //search
+        searchMenu();
+        mainMenu();
         break;      
     case 6:        //group members
         viewMembers();

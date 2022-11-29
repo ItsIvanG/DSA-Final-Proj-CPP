@@ -133,9 +133,12 @@
     <Text Include="MEMBERS.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Arrays.h" />
+    <ClInclude Include="ArraysMenu.h" />
     <ClInclude Include="Arrays1D.h" />
-    <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="queueMenu.h" />
+    <ClInclude Include="searchMenu.h" />
+    <ClInclude Include="Stackmenu.h" />
+    <ClInclude Include="LinkedListMenu.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
