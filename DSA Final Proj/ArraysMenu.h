@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Arrays1D.h"
+#include "Arrays2D.h"
 
 using namespace std;
 void ArraysMenu() {

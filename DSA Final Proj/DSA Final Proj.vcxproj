@@ -133,6 +133,7 @@
     <Text Include="MEMBERS.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Arrays2D.h" />
     <ClInclude Include="ArraysMenu.h" />
     <ClInclude Include="Arrays1D.h" />
     <ClInclude Include="linkedListSTL.h" />

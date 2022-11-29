@@ -9,9 +9,8 @@ void Arrays1D() {
 	string DOB[5];
 	string PATDOC[5];
 	double BILLAMT[5];
-	int n;
-	cout << "Enter number of array items: \n";
-	cin >> n;
+	int n=5;
+
 	string temp;
 	for (int i = 0; i < n; i++)
 	{
