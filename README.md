@@ -1,10 +1,10 @@
 # DSA-Final-Proj-CPP
 
-Gonzales, Ivan S.			         Search Sample Application
-Manalo, Mary Grace C.          Arrays
-Buendia, Daniela Mhaey F.      Linked List
-Garcia, Exequiel G.            Stack
-Enriquez, John Ren P.          Queue using C++ STL
-Tuazon, Julian Madison C.      Sorting Algorithm
-Rodriguez, Patrisha Marie      Queue using Array & Linked List
-Sengco, Raeneil P.             Searching Algorithm
+Gonzales, Ivan S.<br />			         Search Sample Application<br /><br />
+Manalo, Mary Grace C.<br />          Arrays<br /><br />
+Buendia, Daniela Mhaey F.<br />      Linked List<br /><br />
+Garcia, Exequiel G.<br />            Stack<br /><br />
+Enriquez, John Ren P.<br />          Queue using C++ STL<br /><br />
+Tuazon, Julian Madison C.<br />      Sorting Algorithm<br /><br />
+Rodriguez, Patrisha Marie <br />     Queue using Array & Linked List<br /><br />
+Sengco, Raeneil P. <br />            Searching Algorithm<br /><br />
