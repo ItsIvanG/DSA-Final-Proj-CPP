@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 void Arrays1D() {
 
@@ -12,10 +13,9 @@ void Arrays1D() {
 	int n=5;
 
 	string temp;
+	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 	for (int i = 0; i < n; i++)
 	{
-		cin.ignore(numeric_limits<streamsize>::max(), '\n');
-
 		cout << ("Enter the Patient ID Number       :   ");
 		getline(cin, PATID[i]);
 
