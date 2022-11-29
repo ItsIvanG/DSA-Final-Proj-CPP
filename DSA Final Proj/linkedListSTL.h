@@ -6,7 +6,7 @@ void linkedListSTL() {
 	list<string> ll;
 	system("cls");
 	int n;
-	cout << "Enter Linked List items: \n";
+	cout << "Enter number of Linked List items: \n";
 	cin >> n;
     for (int i = 0; i < n; i++)
     {
