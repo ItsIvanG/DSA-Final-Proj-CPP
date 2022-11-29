@@ -43,5 +43,11 @@
     <ClInclude Include="searchMenu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="stackSTL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="searchAlgos.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

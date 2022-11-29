@@ -15,7 +15,7 @@ int main() {
 }
 
 void mainMenu() {
-    //system("CLS");
+    system("CLS");
 	cout<<"[1] Arrays & Pointers"			<< endl;
 	cout<<"[2] Linked List"					<< endl;
 	cout<<"[3] Stack Data Structure"		<< endl;

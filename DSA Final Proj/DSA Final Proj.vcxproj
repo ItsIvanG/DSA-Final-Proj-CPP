@@ -136,9 +136,11 @@
     <ClInclude Include="ArraysMenu.h" />
     <ClInclude Include="Arrays1D.h" />
     <ClInclude Include="queueMenu.h" />
+    <ClInclude Include="searchAlgos.h" />
     <ClInclude Include="searchMenu.h" />
     <ClInclude Include="Stackmenu.h" />
     <ClInclude Include="LinkedListMenu.h" />
+    <ClInclude Include="stackSTL.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
