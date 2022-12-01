@@ -101,7 +101,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
@@ -136,7 +136,8 @@
     <ClInclude Include="Arrays2D.h" />
     <ClInclude Include="ArraysMenu.h" />
     <ClInclude Include="Arrays1D.h" />
-    <ClInclude Include="linkedListSTL.h" />
+    <ClInclude Include="ArraysPointers.h" />
+    <ClInclude Include="linkedList.h" />
     <ClInclude Include="queueMenu.h" />
     <ClInclude Include="searchAlgos.h" />
     <ClInclude Include="searchMenu.h" />

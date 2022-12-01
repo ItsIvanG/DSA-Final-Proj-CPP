@@ -1,5 +1,5 @@
 #include <iostream>
-#include "linkedListSTL.h"
+#include "linkedList.h"
 using namespace std;
 
 void linkedListMenu() {
@@ -10,7 +10,7 @@ system("cls");
  switch (x)
  {
  case 1:
-	 linkedListSTL();
+
 	 break;
  default:
 	 break;

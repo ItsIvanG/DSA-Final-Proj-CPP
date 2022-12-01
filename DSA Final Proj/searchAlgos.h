@@ -75,6 +75,57 @@ void binarySearch() {
 }
 
 
+using namespace std;
+
+int interpolationSearch(int arr[], int lo, int hi, int x)
+{
+    int pos;
+
+    if (lo <= hi && x >= arr[lo] && x <= arr[hi]) {
+
+        pos = lo
+            + (((double)(hi - lo) / (arr[hi] - arr[lo]))
+                * (x - arr[lo]));
+
+        if (arr[pos] == x)
+            return pos;
+
+        if (arr[pos] < x)
+            return interpolationSearch(arr, pos + 1, hi, x);
+
+        if (arr[pos] > x)
+            return interpolationSearch(arr, lo, pos - 1, x);
+    }
+    return -1;
+}
+void interpolationDemo()
+{
+    system("CLS");
+    int arr[] = { 10, 12, 13, 16, 18, 19, 20, 21,
+                22, 23, 24, 33, 35, 42, 47 };
+
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    cout << "Array values: \n";
+    for (int x : arr)
+        cout << x << " ";
+    cout << "\n\nEnter query: \n";
+    int x;
+    cin >> x;
+
+    int index = interpolationSearch(arr, 0, n - 1, x);
+
+
+
+    if (index != -1)
+        cout << "Element found at index " << index<<endl;
+    else
+        cout << "Element not found.\n";
+    system("PAUSE");
+
+}
+
+
 void searchAlgos() {
     system("cls");
 	cout << "[1] LinearSearch\n[2] BinarySearch\n[3] FibonacciSearch\n";
@@ -87,6 +138,9 @@ void searchAlgos() {
         break;
     case 2:
         binarySearch();
+        break;
+    case 3:
+        interpolationDemo();
         break;
     default:
         break;

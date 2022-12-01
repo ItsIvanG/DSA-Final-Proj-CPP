@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include "ArraysMenu.h"
-#include "LinkedListMenu.h"
+#include "LinkedList.h"
 #include "stackmenu.h"
 #include "queuemenu.h"
 #include "searchmenu.h"
@@ -35,7 +35,7 @@ void mainMenu() {
         mainMenu();
         break;
     case 2:        //linkedlist
-        linkedListMenu();
+        LL();
         mainMenu();
         break;
     case 3:        //stack

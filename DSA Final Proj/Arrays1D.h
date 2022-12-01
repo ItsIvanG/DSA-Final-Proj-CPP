@@ -1,24 +1,26 @@
 #include <iostream>
 #include <string>
 using namespace std;
-void Arrays1D() {
 
+void Arrays1D()
+{
 	system("cls");
-
-	string PATID[5];
-	string PATNAME[5];
-	string DOB[5];
-	string PATDOC[5];
-	double BILLAMT[5];
-	int n=5;
+	string PATID[2];
+	string PATNAME[2];
+	string DOB[2];
+	string PATDOC[2];
+	double BILLAMT[2];
+	int n = 2;
 
 	string temp;
+
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
+	cout << "=================PATIENT DATA=================\n" << endl;
+
 	for (int i = 0; i < n; i++)
 	{
 		cout << ("Enter the Patient ID Number       :   ");
 		getline(cin, PATID[i]);
-
 		cout << ("Enter the Patient Name            :   ");
 		getline(cin, PATNAME[i]);
 		cout << ("Enter the Patient Date of Birth   :   ");
@@ -28,6 +30,23 @@ void Arrays1D() {
 		cout << ("Enter Billing Amount              :   ");
 		getline(cin, temp);
 		BILLAMT[i] = stod(temp);
-
+		cout << "\n";
+		cout << "----------------------------------------------\n" << endl;
 	}
+
+	for (int i = 0; i < 2; i++)
+	{
+
+		cout << PATID[i] << endl;
+		cout << PATNAME[i] << endl;
+		cout << DOB[i] << endl;
+		cout << PATDOC[i] << endl;
+		cout << BILLAMT[i] << endl;
+		cout << "\n";
+		cout << "----------------------------------------------\n" << endl;
+	}
+	cout << "\nPress any key to go back to Array & Pointers Menu...";
+	system("pause");
+
+	system("cls");
 }

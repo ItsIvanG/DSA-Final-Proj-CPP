@@ -49,10 +49,13 @@
     <ClInclude Include="searchAlgos.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="linkedListSTL.h">
+    <ClInclude Include="linkedList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Arrays2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArraysPointers.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
