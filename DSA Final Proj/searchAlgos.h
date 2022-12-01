@@ -75,8 +75,6 @@ void binarySearch() {
 }
 
 
-using namespace std;
-
 int interpolationSearch(int arr[], int lo, int hi, int x)
 {
     int pos;
