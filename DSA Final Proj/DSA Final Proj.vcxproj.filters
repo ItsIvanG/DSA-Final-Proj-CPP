@@ -58,5 +58,17 @@
     <ClInclude Include="ArraysPointers.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="queueSTL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="queueArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="queueLinkedList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bits-stdc++.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
