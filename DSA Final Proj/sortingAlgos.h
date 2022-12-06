@@ -37,7 +37,7 @@ void sortAlgosMenu() {
 void bubbleSort()
 {
     const int Maximum = 15;
-    int arr[Maximum], r, s, e, temp, n, xchanges;
+    int PATID[Maximum], r, s, e, temp, n, xchanges;
 
 
 
@@ -46,14 +46,14 @@ void bubbleSort()
     for (r = 0; r < n; r++)
     {
         cout << "\n\n\nPatient ID " << r + 1 << ":";
-        cin >> arr[r];
+        cin >> PATID[r];
     }
 
 
 
     cout << "\n\nUnsorted List: ";
     for (r = 0; r < n; r++) {
-        cout << arr[r] << " ";
+        cout << PATID[r] << " ";
     }
 
 
@@ -62,10 +62,10 @@ void bubbleSort()
     for (r = 0; r < n - 1; r++) {
         xchanges = 0;
         for (s = 0; s < n - r - 1; s++) {
-            if (arr[s] > arr[s + 1]) {
-                temp = arr[s];
-                arr[s] = arr[s + 1];
-                arr[s + 1] = temp;
+            if (PATID[s] > PATID[s + 1]) {
+                temp = PATID[s];
+                PATID[s] = PATID[s + 1];
+                PATID[s + 1] = temp;
                 xchanges++;
             }
         }
@@ -84,7 +84,7 @@ void bubbleSort()
 
 
         for (e = 0; e < n; e++) {
-            cout << arr[e] << " ";
+            cout << PATID[e] << " ";
         }
         cout << "\n";
 
@@ -93,7 +93,7 @@ void bubbleSort()
     }
     cout << "\nSorted List: ";
     for (r = 0; r < n; r++) {
-        cout << arr[r] << " ";
+        cout << PATID[r] << " ";
     }
     cout << "\n";
     system("pause");
@@ -104,7 +104,7 @@ void bubbleSort()
 void selectionSort()
 {
     const int Maximum = 20;
-    int arr[Maximum], m, z, temp, n, smallest;
+    int PATID[Maximum], m, z, temp, n, smallest;
 
 
 
@@ -112,14 +112,14 @@ void selectionSort()
     cin >> n;
     for (m = 0; m < n; m++) {
         cout << "\n\nPatient ID " << m + 1 << ":";
-        cin >> arr[m];
+        cin >> PATID[m];
     }
 
 
 
     cout << "\n\nUnsorted Lists: ";
     for (m = 0; m < n; m++) {
-        cout << arr[m] << " ";
+        cout << PATID[m] << " ";
     }
 
 
@@ -128,18 +128,18 @@ void selectionSort()
     for (m = 0; m < n - 1; m++) {
         smallest = m;
         for (z = m; z < n; z++) {
-            if (arr[smallest] > arr[z])
+            if (PATID[smallest] > PATID[z])
                 smallest = z;
         }
         if (m != smallest) {
-            temp = arr[m];
-            arr[m] = arr[smallest];
-            arr[smallest] = temp;
+            temp = PATID[m];
+            PATID[m] = PATID[smallest];
+            PATID[smallest] = temp;
         }
         cout << "\n";
         cout << "\nAfter Pass " << m + 1 << ", values are: ";
         for (z = 0; z < n; z++)
-            cout << arr[z] << " ";
+            cout << PATID[z] << " ";
         cout << "\n";
     }
 
@@ -147,7 +147,7 @@ void selectionSort()
 
     cout << "\nSorted Lists: ";
     for (m = 0; m < n; m++) {
-        cout << arr[m] << " ";
+        cout << PATID[m] << " ";
     }
     system("pause");
 
