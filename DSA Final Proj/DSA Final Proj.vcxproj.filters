@@ -16,6 +16,18 @@
     <Filter Include="Header Files\arrays">
       <UniqueIdentifier>{de9aab20-fec4-4fd0-9d34-1fbabdbe3cc7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\linkedlist">
+      <UniqueIdentifier>{58d30e76-c0df-4bee-8467-c1c2bcf0b5e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\queues">
+      <UniqueIdentifier>{67b78142-afd8-4dde-88a6-e95857124e45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\searchSorting">
+      <UniqueIdentifier>{b6e0d9a3-191a-46fa-ab68-1aa25039cf8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\stacks">
+      <UniqueIdentifier>{78a76ab6-332c-45a1-96cb-6e80580cfaba}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -28,36 +40,6 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="LinkedListMenu.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Stackmenu.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="queueMenu.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="searchMenu.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="stackSTL.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="searchAlgos.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="linkedList.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="queueSTL.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="queueArray.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="queueLinkedList.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="bits-stdc++.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -72,6 +54,39 @@
     </ClInclude>
     <ClInclude Include="ArraysPointers.h">
       <Filter>Header Files\arrays</Filter>
+    </ClInclude>
+    <ClInclude Include="linkedList.h">
+      <Filter>Header Files\linkedlist</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedListMenu.h">
+      <Filter>Header Files\linkedlist</Filter>
+    </ClInclude>
+    <ClInclude Include="queueArray.h">
+      <Filter>Header Files\queues</Filter>
+    </ClInclude>
+    <ClInclude Include="queueLinkedList.h">
+      <Filter>Header Files\queues</Filter>
+    </ClInclude>
+    <ClInclude Include="queueMenu.h">
+      <Filter>Header Files\queues</Filter>
+    </ClInclude>
+    <ClInclude Include="queueSTL.h">
+      <Filter>Header Files\queues</Filter>
+    </ClInclude>
+    <ClInclude Include="searchAlgos.h">
+      <Filter>Header Files\searchSorting</Filter>
+    </ClInclude>
+    <ClInclude Include="searchMenu.h">
+      <Filter>Header Files\searchSorting</Filter>
+    </ClInclude>
+    <ClInclude Include="sortingAlgos.h">
+      <Filter>Header Files\searchSorting</Filter>
+    </ClInclude>
+    <ClInclude Include="Stackmenu.h">
+      <Filter>Header Files\stacks</Filter>
+    </ClInclude>
+    <ClInclude Include="stackSTL.h">
+      <Filter>Header Files\stacks</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

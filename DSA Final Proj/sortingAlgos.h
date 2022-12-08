@@ -3,6 +3,7 @@ using namespace std;
 
 void bubbleSort();
 void selectionSort();
+void insertionSort();
 void sortAlgosMenu() {
     int ch;
     system("cls");
@@ -10,7 +11,7 @@ void sortAlgosMenu() {
     cout << "=================" << endl;
     cout << "[1] Bubble Sort" << endl;
     cout << "[2] Selection Sort" << endl;
-    cout << "[3]  " << endl;
+    cout << "[3] Insertion Sort" << endl;
     cout << "[0] Back to Main Menu" << endl;
     cout << "=================" << endl;
     cout << "Enter your Choice -> ";
@@ -22,7 +23,7 @@ void sortAlgosMenu() {
     switch (ch) {
         case 1: bubbleSort(); break;
         case 2: selectionSort(); break;
-        case 3: break;
+        case 3: insertionSort();  break;
         case 0: cout << "System Terminated..."; break;
         default: {
             cout << "Invalid Choice! Press any key..." << endl;
@@ -148,6 +149,44 @@ void selectionSort()
     cout << "\nSorted Lists: ";
     for (m = 0; m < n; m++) {
         cout << PATID[m] << " ";
+    }
+    system("pause");
+
+}
+
+void insertionSort()
+{
+    const int MAX = 20;
+    int arr[MAX], i, j, k, n;
+    cout << "New Patient/s amount: ";
+    cin >> n;
+    for (i = 0; i < n; i++) {
+        cout << "\nPatient name " << i + 1 << ": ";
+        cin >> arr[i];
+
+    }
+    cout << "\n\nUnsorted List: ";
+    for (i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+
+    }
+    cout << "\n";
+
+    for (j = 1; j < n; j++) {
+        k = arr[j];
+        for (i = j - 1; i >= 0 && k < arr[i]; i--)
+            arr[i + 1] = arr[i];
+        arr[i + 1] = k;
+        cout << "\nPass " << j << " element inserted in proper place " << k << ": ";
+        for (i = 0; i < n; i++)
+            cout << arr[i] << " ";
+        cout << "\n";
+
+    }
+    cout << "\nSorted Lists: ";
+    for (i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+
     }
     system("pause");
 
