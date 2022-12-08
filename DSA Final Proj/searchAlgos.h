@@ -126,7 +126,7 @@ void interpolationDemo()
 
 void searchAlgos() {
     system("cls");
-	cout << "[1] LinearSearch\n[2] BinarySearch\n[3] FibonacciSearch\n";
+	cout << "[1] Linear Search\n[2] Binary Search\n[3] Interpolation Search\n";
     int x;
     cin >> x;
     switch (x)
