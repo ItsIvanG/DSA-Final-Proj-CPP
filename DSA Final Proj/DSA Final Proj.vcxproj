@@ -145,6 +145,7 @@
     <ClInclude Include="queueMenu.h" />
     <ClInclude Include="searchAlgos.h" />
     <ClInclude Include="searchMenu.h" />
+    <ClInclude Include="sortingAlgos.h" />
     <ClInclude Include="Stackmenu.h" />
     <ClInclude Include="LinkedListMenu.h" />
     <ClInclude Include="stackSTL.h" />

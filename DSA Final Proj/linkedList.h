@@ -13,6 +13,7 @@ void LL()
     int ch;
 
     do {
+        system("cls");
         cout << "LINKED LISTS - Sub Menu" << endl;
         cout << "=================" << endl;
         cout << "[1] Singly Linked List" << endl;
@@ -27,14 +28,14 @@ void LL()
         system("cls");
 
         switch (ch) {
-        case 1: SLinkedList(); break;
-        case 2: DLinkedList(); break;
-        case 3: CLinkedList(); break;
-        case 0: cout << "System Terminated..."; break;
-        default: {
-            cout << "Invalid Choice! Press any key..." << endl;
-            system("PAUSE");
-        }
+            case 1: SLinkedList(); break;
+            case 2: DLinkedList(); break;
+            case 3: CLinkedList(); break;
+            case 0: cout << "System Terminated..."; break;
+            default: {
+                cout << "Invalid Choice! Press any key..." << endl;
+                getch();
+            }
         }
     } while (ch != 0);
 }
@@ -59,9 +60,8 @@ void SLinkedList()
     string inpDOB = "";
     string inpPATDOC = "";
     double inpBILLAMT;
-    system("CLS");
 
-    cout << "=================PATIENT DATA=================" << endl;
+    cout << "=================PATIENT DATA=================\n" << endl;
     for (int ctr = 1; ctr <= 3; ctr++)
     {
         cout << "Enter Patient ID " << ctr << "         :   ";
@@ -100,21 +100,23 @@ void SLinkedList()
 
     Patient* displayPointer;
     displayPointer = head;
+
+    system("cls");
+    cout << "Singly linked list is as follows: \n" << endl;
     while (displayPointer)
     {
-        cout << displayPointer->PATID << "\t\t";
-        cout << displayPointer->PATNAME << "\t\t";
-        cout << displayPointer->DOB << "\t\t";
-        cout << displayPointer->PATDOC << "\t\t";
-        cout << displayPointer->BILLAMT << "\t\t";
-        cout << displayPointer << "\t\t";
+        cout << "Patient ID         :   " << displayPointer->PATID << endl;
+        cout << "Patient Name       :   " << displayPointer->PATNAME << endl;
+        cout << "Date of Birth      :   " << displayPointer->DOB << endl;
+        cout << "Patient's Doctor   :   " << displayPointer->PATDOC << endl;
+        cout << "Billing Amount     :   " << displayPointer->BILLAMT << endl;
+        cout << " at " << displayPointer << endl << endl;
         displayPointer = displayPointer->next;
-        cout << endl;
     }//end while
-    cout << "\nPress any key to go back Array Sub Menu...";
-    system("PAUSE");
+    cout << "\nPress any key to go back Linked Lists Sub Menu...";
+    getch();
     system("cls");
-} // end void SLinkedList
+}
 
 void DLinkedList()
 {
@@ -141,9 +143,9 @@ void DLinkedList()
     Patient* nextPatPointer;
     Patient* prevPatPointer;
 
-    cout << "=================PATIENT DATA=================" << endl;
     //add the first node
-    for (int ctr = 1; ctr <= 2; ctr++)
+    cout << "=================PATIENT DATA=================\n" << endl;
+    for (int ctr = 1; ctr <= 3; ctr++)
     {
         cout << "Enter Patient ID " << ctr << "         :   ";
         getline(cin, inpPATID);
@@ -176,11 +178,11 @@ void DLinkedList()
         {
             // add next node with reference to first node
             nextPatPointer = new Patient;
-            newPatient->PATID = inpPATID;
-            newPatient->PATNAME = inpPATNAME;
-            newPatient->DOB = inpDOB;
-            newPatient->PATDOC = inpPATDOC;
-            newPatient->BILLAMT = inpBILLAMT;
+            nextPatPointer->PATID = inpPATID;
+            nextPatPointer->PATNAME = inpPATNAME;
+            nextPatPointer->DOB = inpDOB;
+            nextPatPointer->PATDOC = inpPATDOC;
+            nextPatPointer->BILLAMT = inpBILLAMT;
             nextPatPointer->prev = prevPatPointer;
             nextPatPointer->next = NULL;
             prevPatPointer->next = nextPatPointer;
@@ -196,22 +198,23 @@ void DLinkedList()
         cout << "no node to display" << endl;
     else
     {
-        cout << "Doubly linked list is as follows: " << endl;
+        system("cls");
+        cout << "Doubly linked list is as follows: \n" << endl;
         while (displayPointer != NULL)
         {
-            cout << "Patient ID Name: " << displayPointer->PATID << endl;
-            cout << "Patient Name: " << displayPointer->PATNAME << endl;
-            cout << "Date of Birth: " << displayPointer->DOB << endl;
-            cout << "Patient Doctor: " << displayPointer->PATDOC << endl;
-            cout << "Billing Amount: " << displayPointer->BILLAMT << endl;
+            cout << "Patient ID         :   " << displayPointer->PATID << endl;
+            cout << "Patient Name       :   " << displayPointer->PATNAME << endl;
+            cout << "Date of Birth      :   " << displayPointer->DOB << endl;
+            cout << "Patient's Doctor   :   " << displayPointer->PATDOC << endl;
+            cout << "Billing Amount     :   " << displayPointer->BILLAMT << endl;
             cout << " at " << displayPointer << endl << endl;
-            cout << endl;
             displayPointer = displayPointer->next;
         }
     }
-    cout << "\nPress any key to go back Array Sub Menu...";
-    system("PAUSE");
-}//end void DLinkedList
+    cout << "\nPress any key to go back Linked Lists Sub Menu...";
+    getch();
+    system("cls");
+}//end main
 
 struct Patient
 {
@@ -227,11 +230,11 @@ void printList(Patient* displayPointer)
 {
     while (displayPointer != NULL)
     {
-        cout << "\nPatient ID    : " << displayPointer->PATID << endl;
-        cout << "Patient Name  : " << displayPointer->PATNAME << endl;
-        cout << "Date of Birth : " << displayPointer->DOB << endl;
-        cout << "Patient Doctor: " << displayPointer->PATDOC << endl;
-        cout << "Billing Amount: " << displayPointer->BILLAMT << endl;
+        cout << "\nPatient ID        :   " << displayPointer->PATID << endl;
+        cout << "Patient Name      :   " << displayPointer->PATNAME << endl;
+        cout << "Date of Birth     :   " << displayPointer->DOB << endl;
+        cout << "Patient's Doctor  :   " << displayPointer->PATDOC << endl;
+        cout << "Billing Amount    :   " << displayPointer->BILLAMT << endl;
         cout << endl;
         displayPointer = displayPointer->next;
         system("pause");
@@ -247,7 +250,7 @@ void CLinkedList()
     Patient* fourth = new Patient();
     Patient* fifth = new Patient();
 
-    cout << "=================PATIENT DATA=================" << endl;
+    cout << "=================PATIENT DATA=================\n" << endl;
     cout << "Enter Patient ID 1" << "         :   ";
     getline(cin, head->PATID);
     cout << "Enter Patient Name 1" << "       :   ";
@@ -315,8 +318,6 @@ void CLinkedList()
     fifth->next = head;
 
     system("cls");
-    cout << "=================" << endl;
-    cout << "\n\Circular linked list is as follows: " << endl;
+    cout << "Circular linked list is as follows: " << endl;
     printList(head);
-
 }

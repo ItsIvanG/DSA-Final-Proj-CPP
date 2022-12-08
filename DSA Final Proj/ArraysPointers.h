@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 void Pointers()
 {
@@ -28,5 +29,5 @@ void Pointers()
 
     cout << "\nPress any key to go back to Array & Pointers Menu...";
     system("pause");
-    system("cls");
+
 } //end main

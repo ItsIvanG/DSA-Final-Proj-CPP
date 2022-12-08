@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+
 using namespace std;
 
 void Arrays1D()
@@ -14,7 +15,7 @@ void Arrays1D()
 
 	string temp;
 
-	cin.ignore(numeric_limits<streamsize>::max(), '\n');
+	cin.ignore();
 	cout << "=================PATIENT DATA=================\n" << endl;
 
 	for (int i = 0; i < n; i++)
@@ -48,5 +49,4 @@ void Arrays1D()
 	cout << "\nPress any key to go back to Array & Pointers Menu...";
 	system("pause");
 
-	system("cls");
 }
