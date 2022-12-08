@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\arrays">
+      <UniqueIdentifier>{de9aab20-fec4-4fd0-9d34-1fbabdbe3cc7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -25,12 +28,6 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ArraysMenu.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Arrays1D.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="LinkedListMenu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -52,12 +49,6 @@
     <ClInclude Include="linkedList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Arrays2D.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ArraysPointers.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="queueSTL.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -69,6 +60,18 @@
     </ClInclude>
     <ClInclude Include="bits-stdc++.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Arrays1D.h">
+      <Filter>Header Files\arrays</Filter>
+    </ClInclude>
+    <ClInclude Include="Arrays2D.h">
+      <Filter>Header Files\arrays</Filter>
+    </ClInclude>
+    <ClInclude Include="ArraysMenu.h">
+      <Filter>Header Files\arrays</Filter>
+    </ClInclude>
+    <ClInclude Include="ArraysPointers.h">
+      <Filter>Header Files\arrays</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
