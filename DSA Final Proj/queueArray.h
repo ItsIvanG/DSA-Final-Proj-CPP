@@ -1,12 +1,14 @@
 #include <iostream>
 using namespace std;
-const int MAX = 20;
-int PATID[MAX];
+
+const int queueMax = 20;
+
+int PATID[queueMax];
 int rear = -1;
 int front = -1;
 void insert() {
 	int added_item;
-	if (rear == MAX - 1) {
+	if (rear == queueMax - 1) {
 		cout << "\nQueue overflow";
 		return;
 	}

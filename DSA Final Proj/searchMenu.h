@@ -1,7 +1,7 @@
 #include <iostream>
 #include "searchAlgos.h"
 #include "sortingAlgos.h"
-
+#include "sampleApp.h"
 using namespace std;
 void searchMenu() {
 	system("CLS");
@@ -15,6 +15,9 @@ void searchMenu() {
 		break;
 	case 2:
 		sortAlgosMenu();
+		break;
+	case 3:
+		sampleApp();
 		break;
 	default:
 		break;

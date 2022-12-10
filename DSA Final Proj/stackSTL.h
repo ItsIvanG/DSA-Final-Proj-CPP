@@ -4,6 +4,7 @@
 using namespace std;
     
     void stackSTL() {
+        system("cls");
 
         stack<string> stack;
 

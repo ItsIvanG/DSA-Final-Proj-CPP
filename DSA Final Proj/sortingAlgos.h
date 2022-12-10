@@ -157,35 +157,35 @@ void selectionSort()
 void insertionSort()
 {
     const int MAX = 20;
-    int arr[MAX], i, j, k, n;
+    int PATID[MAX], i, j, k, n;
     cout << "New Patient/s amount: ";
     cin >> n;
     for (i = 0; i < n; i++) {
-        cout << "\nPatient name " << i + 1 << ": ";
-        cin >> arr[i];
+        cout << "\nPatient ID " << i + 1 << ": ";
+        cin >> PATID[i];
 
     }
     cout << "\n\nUnsorted List: ";
     for (i = 0; i < n; i++) {
-        cout << arr[i] << " ";
+        cout << PATID[i] << " ";
 
     }
     cout << "\n";
 
     for (j = 1; j < n; j++) {
-        k = arr[j];
-        for (i = j - 1; i >= 0 && k < arr[i]; i--)
-            arr[i + 1] = arr[i];
-        arr[i + 1] = k;
+        k = PATID[j];
+        for (i = j - 1; i >= 0 && k < PATID[i]; i--)
+            PATID[i + 1] = PATID[i];
+        PATID[i + 1] = k;
         cout << "\nPass " << j << " element inserted in proper place " << k << ": ";
         for (i = 0; i < n; i++)
-            cout << arr[i] << " ";
+            cout << PATID[i] << " ";
         cout << "\n";
 
     }
     cout << "\nSorted Lists: ";
     for (i = 0; i < n; i++) {
-        cout << arr[i] << " ";
+        cout << PATID[i] << " ";
 
     }
     system("pause");

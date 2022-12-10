@@ -88,5 +88,11 @@
     <ClInclude Include="stackSTL.h">
       <Filter>Header Files\stacks</Filter>
     </ClInclude>
+    <ClInclude Include="stackArray.h">
+      <Filter>Header Files\stacks</Filter>
+    </ClInclude>
+    <ClInclude Include="sampleApp.h">
+      <Filter>Header Files\searchSorting</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

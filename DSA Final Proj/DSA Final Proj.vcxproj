@@ -143,9 +143,11 @@
     <ClInclude Include="queueLinkedList.h" />
     <ClInclude Include="queueSTL.h" />
     <ClInclude Include="queueMenu.h" />
+    <ClInclude Include="sampleApp.h" />
     <ClInclude Include="searchAlgos.h" />
     <ClInclude Include="searchMenu.h" />
     <ClInclude Include="sortingAlgos.h" />
+    <ClInclude Include="stackArray.h" />
     <ClInclude Include="Stackmenu.h" />
     <ClInclude Include="LinkedListMenu.h" />
     <ClInclude Include="stackSTL.h" />
