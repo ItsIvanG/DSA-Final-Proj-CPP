@@ -17,19 +17,21 @@ int linear(int ar[], int size, int item)
 
 void LinearSearch() {
     system("cls");
-    int ar[50], size, item, i, pos;
-    cout << "Enter number of elements=";
+    int PATID[50], size, item, i, pos;
+    cout << "LINEAR SEARCH" << endl;
+    cout << "========================" << endl;
+    cout << "Enter number of Patient IDs =";
     cin >> size;
-    cout << "Enter Array's Elements=";
+    cout << "Enter Patient IDs =";
     for (i = 0; i < size; i++)
-        cin >> ar[i];
-    cout << "Enter element which to be searched=";
+        cin >> PATID[i];
+    cout << "Enter Patient ID to be searched=";
     cin >> item;
-    pos = linear(ar, size, item);
+    pos = linear(PATID, size, item);
     if (pos == -1)
-        cout << "Element not Found";
+        cout << "Patient ID not Found";
     else
-        cout << "Element Found at=" << (pos + 1);
+        cout << "Patient ID Found at=" << (pos + 1);
 
     cout << endl;
     system("pause");
@@ -53,21 +55,23 @@ int Binary(int ar[], int size, int item)
 }
 void binarySearch() {
     system("cls");
-    int ar[50], size, item, i, pos;
-    cout << "Enter number of elements=";
+    cout << "BINARY SEARCH" << endl;
+    cout << "========================" << endl;
+    int PATID[50], size, item, i, pos;
+    cout << "Enter number of Patient IDs=";
     cin >> size;
-    cout << "Enter Array's Elements=";
+    cout << "Enter Patient IDs =";
     for (i = 0; i < size; i++)
-        cin >> ar[i];
-    cout << "Enter element which to be searched=";
+        cin >> PATID[i];
+    cout << "Enter Patient ID to be searched=";
     cin >> item;
 
-    pos = Binary(ar, size, item);
+    pos = Binary(PATID, size, item);
 
     if (pos == -1)
-        cout << "Element not Found";
+        cout << "Patient ID not Found";
     else
-        cout << "Element Found at=" << (pos + 1);
+        cout << "Patient ID Found at=" << (pos + 1);
     
     cout << endl;
     system("pause");
@@ -99,26 +103,28 @@ int interpolationSearch(int arr[], int lo, int hi, int x)
 void interpolationDemo()
 {
     system("CLS");
-    int arr[] = { 10, 12, 13, 16, 18, 19, 20, 21,
+    cout << "INTERPOLATION SEARCH" << endl;
+    cout << "========================" << endl;
+    int PATID[] = { 10, 12, 13, 16, 18, 19, 20, 21,
                 22, 23, 24, 33, 35, 42, 47 };
 
-    int n = sizeof(arr) / sizeof(arr[0]);
+    int n = sizeof(PATID) / sizeof(PATID[0]);
 
-    cout << "Array values: \n";
-    for (int x : arr)
+    cout << "Patient IDs: \n";
+    for (int x : PATID)
         cout << x << " ";
     cout << "\n\nEnter query: \n";
     int x;
     cin >> x;
 
-    int index = interpolationSearch(arr, 0, n - 1, x);
+    int index = interpolationSearch(PATID, 0, n - 1, x);
 
 
 
     if (index != -1)
-        cout << "Element found at index " << index<<endl;
+        cout << "Patient ID found at index " << index<<endl;
     else
-        cout << "Element not found.\n";
+        cout << "Patient ID not found.\n";
     system("PAUSE");
 
 }
@@ -126,6 +132,8 @@ void interpolationDemo()
 
 void searchAlgos() {
     system("cls");
+    cout << "SEARCH ALGORITHMS\n";
+    cout << "========================\n" << endl;
 	cout << "[1] Linear Search\n[2] Binary Search\n[3] Interpolation Search\n";
     int x;
     cin >> x;

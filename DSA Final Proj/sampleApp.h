@@ -5,8 +5,11 @@ using namespace std;
 
 void sampleApp(){
 
-    // INSERTION SORT ALGO
-
+    
+    system("cls");
+    cout << "SEARCH AND SORT APPLICATION\n";
+    cout << "========================" << endl;
+// INSERTION SORT ALGO
     const int MAX = 20;
     int PATID[MAX], i, j, k, n;
     cout << "New Patient/s amount: ";

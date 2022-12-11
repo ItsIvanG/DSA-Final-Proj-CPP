@@ -5,7 +5,8 @@ using namespace std;
     
     void stackSTL() {
         system("cls");
-
+        cout << "STACK USING STL\n";
+        cout << "========================\n" << endl;
         stack<string> stack;
 
         stack.push("PHP 84,599");
@@ -49,5 +50,6 @@ using namespace std;
             cout << "\t\t\t\t\t Stack is Not Empty" << endl;
 
         }
+        system("PAUSE");
 
 }

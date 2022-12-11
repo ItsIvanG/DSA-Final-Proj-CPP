@@ -6,10 +6,10 @@
 using namespace std;
 void ArraysMenu() {
 	system("CLS");
-	cout << "================ARRAYS & POINTERS================\n" << endl;
-	cout << "=================================================" << endl;
-	cout << "[1] Array [One Dimensional]\n[2] Array[Two Dimensional]\n[3] Pointers\n[0] Back to Main Menu\n";
-	cout << "=================================================" << endl;
+	cout << "ARRAYS & POINTERS" << endl;
+	cout << "========================" << endl;
+	cout << "[1] Array [One Dimensional]\n[2] Array [Two Dimensional]\n[3] Pointers\n[0] Back to Main Menu\n";
+	cout << "========================" << endl;
 	cout << "Enter your Choice -> ";
 	int x;
 	cin >> x;

@@ -186,11 +186,13 @@ void Display()
     }
 
 }
-void stackArray()
+int stackArray()
 {
     system("cls");
     int PATDATA;
     TopValue();
+    cout << "STACK USING ARRAYS\n";
+    cout << "========================\n" << endl;
 
     cout << "| Patient ID |      Patient Name     |   Date of Birth   |         Patient Doctor        | Billing Amount |\n";
     cout << "-----------------------------------------------------------------------------------------------------------\n";
@@ -213,10 +215,11 @@ void stackArray()
 
     while (1) {
 
-        cout << "\nMode (1) - Select Patient\n";
-        cout << "Mode (2) - Remove Patient Data\n";
-        cout << "Mode (3) - Display Patient Data\n";
-        cout << "\nMode: ";
+        cout << "\ (1) - Select Patient\n";
+        cout << " (2) - Remove Patient Data Selection\n";
+        cout << " (3) - Display Selected Patient Data\n";
+        cout << " (4) - Exit to main menu\n";
+        cout << "\nInput choice: ";
         cin >> PATDATA;
 
         switch (PATDATA)
@@ -227,6 +230,7 @@ void stackArray()
         case 2: Pop(); break;
 
         case 3: Display(); break;
+        case 4: return 0;  break;
 
         default: cout << "\nInvalid input, try again.\n";
 

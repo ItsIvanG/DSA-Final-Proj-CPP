@@ -9,14 +9,14 @@ int front = -1;
 void insert() {
 	int added_item;
 	if (rear == queueMax - 1) {
-		cout << "\nQueue overflow";
+		cout << "\nQueue overflow" << endl;
+		system("pause");
 		return;
 	}
 	else {
 		if (front == -1)
 			front = 0;
-		cout << "\nInput the element for ";
-		cout << "adding in queue: ";
+		cout << "\nInput Patient ID to add in queue" << endl;
 		cin >> added_item;
 		rear = rear + 1;
 		PATID[rear] = added_item;
@@ -24,34 +24,41 @@ void insert() {
 }
 void del() {
 	if (front == -1 || front > rear) {
-		cout << "\nQueue overflow";
+		cout << "\nQueue underflow" << endl;
+		system("pause");
 		return;
 	}
 	else {
-		cout << "\nElement deleted from";
-		cout << "the queue is: " << PATID[front];
+		cout << "\nPatient ID dequeued: "<< PATID[front]<<endl;
 		front++;
 	}
+	system("pause");
 }
 void display() {
 	int i;
 	if (front == -1 || front > rear) {
-		cout << "\nQueue overflow";
+		cout << "\nQueue is empty." << endl;
+		system("pause");
 		return;
 	}
 	else {
-		cout << "\nQueue content : ";
+		cout << "\nPatient IDs in queue : ";
 		for (i = front; i <= rear; i++)
 			cout << PATID[i] << " ";
 		cout << "\n";
 	}
+	system("pause");
 }
 void queueArray() {
 	int choice;
-	while (1) {
-		cout << "\n[1] Insert\n";
-		cout << "[2] Delete\n";
-		cout << "[3] Display\n";
+	int loop = 1;
+	while (loop == 1) {
+		system("cls");
+		cout << "QUEUE USING ARRAY\n";
+		cout << "========================\n" << endl;
+		cout << "[1] Insert Patient ID to queue\n";
+		cout << "[2] Dequeue Patient ID\n";
+		cout << "[3] Display all Patient IDs in queue\n";
 		cout << "[4] Quit\n";
 		cout << "Choice -> ";
 		cin >> choice;
@@ -59,8 +66,8 @@ void queueArray() {
 		case 1: insert(); break;
 		case 2: del(); break;
 		case 3: display(); break;
-		case 4: exit(1);
-		default: cout << "Wrong choice";
+		case 4: loop = 0; break;
+		default:  cout << "Wrong choice"; break;
 		}
 	}
 

@@ -14,17 +14,17 @@ void LL()
 
     do {
         system("cls");
-        cout << "LINKED LISTS - Sub Menu" << endl;
-        cout << "=================" << endl;
+        cout << "LINKED LISTS" << endl;
+        cout << "========================" << endl;
         cout << "[1] Singly Linked List" << endl;
         cout << "[2] Doubly Linked List" << endl;
         cout << "[3] Circular Linked List" << endl;
         cout << "[0] Back to Main Menu" << endl;
-        cout << "=================" << endl;
+        cout << "========================" << endl;
         cout << "Enter your Choice -> ";
         cin >> ch;
         cin.ignore();
-        cout << "=================" << endl;
+        cout << "========================" << endl;
         system("cls");
 
         switch (ch) {
@@ -60,7 +60,8 @@ void SLinkedList()
     string inpDOB = "";
     string inpPATDOC = "";
     double inpBILLAMT;
-
+    cout << "SINGLY LINKED LIST" << endl;
+	cout << "========================\n" << endl;
     cout << "=================PATIENT DATA=================\n" << endl;
     for (int ctr = 1; ctr <= 3; ctr++)
     {
@@ -144,6 +145,8 @@ void DLinkedList()
     Patient* prevPatPointer;
 
     //add the first node
+    cout << "DOUBLY LINKED LIST" << endl;
+    cout << "========================\n" << endl;
     cout << "=================PATIENT DATA=================\n" << endl;
     for (int ctr = 1; ctr <= 3; ctr++)
     {
@@ -226,7 +229,7 @@ struct Patient
     Patient* next;
 };
 
-void printList(Patient* displayPointer)
+int printList(Patient* displayPointer)
 {
     while (displayPointer != NULL)
     {
@@ -237,7 +240,10 @@ void printList(Patient* displayPointer)
         cout << "Billing Amount    :   " << displayPointer->BILLAMT << endl;
         cout << endl;
         displayPointer = displayPointer->next;
-        system("pause");
+        cout << "Press X to end loop. Press anything else to continue." << endl;
+        char ch = getch();
+        if (ch == 'x')
+            return 0;
         cout << endl;
     }
 }
@@ -249,7 +255,8 @@ void CLinkedList()
     Patient* third = new Patient();
     Patient* fourth = new Patient();
     Patient* fifth = new Patient();
-
+    cout << "CIRCULAR LINKED LIST" << endl;
+    cout << "========================\n" << endl;
     cout << "=================PATIENT DATA=================\n" << endl;
     cout << "Enter Patient ID 1" << "         :   ";
     getline(cin, head->PATID);

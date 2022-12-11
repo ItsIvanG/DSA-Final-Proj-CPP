@@ -6,6 +6,8 @@ using namespace std;
 void Arrays1D()
 {
 	system("cls");
+	cout << "ARRAY 1D\n";
+	cout << "========================\n" << endl;
 	string PATID[2];
 	string PATNAME[2];
 	string DOB[2];

@@ -149,7 +149,7 @@
     <ClInclude Include="sortingAlgos.h" />
     <ClInclude Include="stackArray.h" />
     <ClInclude Include="Stackmenu.h" />
-    <ClInclude Include="LinkedListMenu.h" />
+    <ClInclude Include="stackLL.h" />
     <ClInclude Include="stackSTL.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

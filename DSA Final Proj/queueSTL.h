@@ -1,39 +1,36 @@
-#include <iostream>
+#include<iostream>
 #include <queue>
-
 using namespace std;
 
-
-// Print the queueSTL
-void displayQueue(queue<int> gq)
+int queueSTL()
 {
-    queue<int> g = gq;
-    while (!g.empty()) {
-        cout << '\t' << g.front();
-        g.pop();
-    }
-    cout << '\n';
-}
-
-
-void queueSTL() {
-    system("cls");
     queue<int> PATID;
-    PATID.push(10);
-    PATID.push(20);
-    PATID.push(30);
+    int n;
+        system("cls");
+    cout << "QUEUE IN STL\n";
+    cout << "========================" << endl;
+    cout << "Enter amount of patients to queue: ";
+    cin >> n;
+    for (int i = 0; i < n; i++)
 
-    cout << "The queue gquiz is : ";
-    displayQueue(PATID);
+    {
+        cout << "Admit Patient ID ("<<i+1<<"): ";
+        int x;
+        cin >> x;
+        PATID.push(x);
+    }
 
-    cout << "\ngquiz.size() : " << PATID.size();
-    cout << "\ngquiz.front() : " << PATID.front();
-    cout << "\ngquiz.back() : " << PATID.back();
+    cout << "Number of patients to discharge: " << PATID.size() << endl;
 
-    cout << "\ngquiz.pop() : ";
-    PATID.pop();
-    displayQueue(PATID);
+    while (!PATID.empty())
+    {
+        cout << "Discharge Patient ID " << PATID.front() << endl;
+
+        PATID.pop();
+    }
+
     system("pause");
+    return 0;
+
+
 }
-
-

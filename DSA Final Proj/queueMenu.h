@@ -5,7 +5,11 @@
 using namespace std;
 void queueMenu() {
 	system("cls");
+	cout << "QUEUE DATA STRUCTURE" << endl;
+	cout << "========================" << endl;
 	cout << "[1] Queue using Array\n[2] Queue using Linked List\n[3] Queue in C++ STL\n[0] Back to Main Menu\n";
+	cout << "========================" << endl;
+	cout << "Enter your Choice -> ";
 	int a;
 	cin >> a;
 	switch (a) {

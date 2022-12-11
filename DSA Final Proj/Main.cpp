@@ -15,7 +15,11 @@ int main() {
 }
 
 void mainMenu() {
+    system("color F0");
     system("CLS");
+    cout << "GROUP 04 - HEALTH RELATED PROJECT\nMAIN MENU" << endl;
+    cout << "========================" << endl;
+    
 	cout<<"[1] Arrays & Pointers"			<< endl;
 	cout<<"[2] Linked List"					<< endl;
 	cout<<"[3] Stack Data Structure"		<< endl;
@@ -23,6 +27,8 @@ void mainMenu() {
 	cout<<"[5] Search & Sorting Algorithm"	<< endl;
 	cout<<"[6] Group Members"				<< endl;
 	cout<<"[0] Exit"						<< endl;
+    cout << "========================" << endl;
+    cout << "Enter your Choice -> ";
     int answer;
     cin >> answer;
     switch (answer) {

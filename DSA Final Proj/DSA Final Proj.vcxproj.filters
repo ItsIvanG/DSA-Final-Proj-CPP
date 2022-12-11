@@ -58,9 +58,6 @@
     <ClInclude Include="linkedList.h">
       <Filter>Header Files\linkedlist</Filter>
     </ClInclude>
-    <ClInclude Include="LinkedListMenu.h">
-      <Filter>Header Files\linkedlist</Filter>
-    </ClInclude>
     <ClInclude Include="queueArray.h">
       <Filter>Header Files\queues</Filter>
     </ClInclude>
@@ -93,6 +90,9 @@
     </ClInclude>
     <ClInclude Include="sampleApp.h">
       <Filter>Header Files\searchSorting</Filter>
+    </ClInclude>
+    <ClInclude Include="stackLL.h">
+      <Filter>Header Files\stacks</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

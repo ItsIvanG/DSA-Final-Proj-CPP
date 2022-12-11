@@ -5,6 +5,8 @@ using namespace std;
 void Arrays2D() {
 	string PATIENTS[2][5];
 	system("cls");
+	cout << "ARRAY 2D\n";
+	cout << "========================\n" << endl;
 	cout << "=================PATIENT DATA=================\n" << endl;
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 	for (int i = 0; i < 2; i++)

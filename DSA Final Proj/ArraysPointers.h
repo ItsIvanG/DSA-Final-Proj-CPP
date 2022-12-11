@@ -3,8 +3,10 @@
 using namespace std;
 void Pointers()
 {
-
-    system("cls");
+   
+    system("cls"); 
+    cout << "ARRAY POINTERS\n";
+    cout << "========================\n" << endl;
     int PATID = 10920;
     int* b;
     int** c;

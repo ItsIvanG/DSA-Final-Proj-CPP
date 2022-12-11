@@ -7,7 +7,7 @@ void insertionSort();
 void sortAlgosMenu() {
     int ch;
     system("cls");
-    cout << "Sorting Algorithms - Sub Menu" << endl;
+    cout << "Sorting Algorithms" << endl;
     cout << "=================" << endl;
     cout << "[1] Bubble Sort" << endl;
     cout << "[2] Selection Sort" << endl;
@@ -41,7 +41,8 @@ void bubbleSort()
     int PATID[Maximum], r, s, e, temp, n, xchanges;
 
 
-
+    cout << "BUBBLE SORT" << endl;
+    cout << "========================" << endl;
     cout << "New Patient/s amount: ";
     cin >> n;
     for (r = 0; r < n; r++)
@@ -107,7 +108,8 @@ void selectionSort()
     const int Maximum = 20;
     int PATID[Maximum], m, z, temp, n, smallest;
 
-
+    cout << "SELECTION SORT" << endl;
+    cout << "========================" << endl;
 
     cout << "New Patient/s amount: ";
     cin >> n;
@@ -156,6 +158,8 @@ void selectionSort()
 
 void insertionSort()
 {
+    cout << "INSERTION SORT" << endl;
+    cout << "========================" << endl;
     const int MAX = 20;
     int PATID[MAX], i, j, k, n;
     cout << "New Patient/s amount: ";
